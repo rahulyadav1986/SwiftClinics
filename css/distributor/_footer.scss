@@ -1,0 +1,81 @@
+
+footer{
+    width: 100%;
+    .top{
+        width: 100%; background-color: var(--primary-color); height: 15.5rem;
+        h3{
+            font-size: 3.5rem; font-weight: 700; color: #434343;
+        }
+    }
+    .main_footer{
+        width: 100%; background-color: var(--footer-color);
+        .portion{
+            width: 100%; margin-bottom: 3rem;
+            h3{
+                color: var(--primary-color); font-size: 1.9rem; font-weight: 700; line-height: 3rem; margin-bottom: 2.5rem;
+            }
+            h2{
+                color: #fff; font-size: 2.3rem; text-transform: uppercase; font-weight: 700;
+            }
+            p{
+                color: #8795b0; font-size: 1.5rem; font-weight: 500;
+            }
+            a{
+                color: #d2edf8; text-transform: capitalize; margin-top: 2rem; display: inline-block;
+            }
+            .ft_menu{
+                width: 100%;
+                li{
+                    margin-bottom: 1rem; width: 100%;
+                    a{
+                        color: #8795b0; font-size: 1.5rem; text-transform: capitalize; padding-left: 3rem; background: url(../images/white_hand.png) left center no-repeat; display: inline-block; margin: 0; font-weight: 700;
+                    }
+                }
+                &.contact{
+                    font-weight: 700;
+                    li:first-child{
+                        a{
+                            background: url(../images/home.png) left center no-repeat;
+                        }
+                    }
+                    li:nth-child(2){
+                        a{
+                            background: url(../images/skype.png) left center no-repeat;
+                        }
+                    }
+                    li:nth-child(3){
+                        a{
+                            background: url(../images/mail.png) left center no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copy_right_back{
+        width: 100%; padding: 2.5rem 0; background-color: #18253e; color: #a0acc3; font-size: 1.6rem; text-align: center; font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 1365px){
+    footer{
+        .top{
+            h3{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px){
+    footer{
+        .top{
+            text-align: center;
+            .container{
+                flex-wrap: wrap; justify-content: center !important;
+            }
+            h3{
+                flex: 0 0 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,125 @@
+
+header{
+    width: 100%; box-shadow: rgba(190,190,190,.75) 0 0 1.5rem;
+    .top{
+        width: 100%; background-color: var(--primary-color); height: 4.4rem;
+        ul{
+            &.left{
+                li{
+                    margin-right: 2rem; padding-right: 2rem; position: relative; color: var(--active-font-color);
+                    &::after{
+                        width: 1px; height: 1.7rem; background-color: var(--active-font-color); position: absolute; top: 0; right: 0; bottom: 0; margin: auto; content: "";
+                    }
+                    &:last-child{
+                        margin-right: 0; padding-right: 0;
+                        &::after{
+                            display: none;
+                        }
+                    }
+                    img{
+                        margin-right: 12px;
+                    }
+                }
+            }
+        }
+        ul{
+            &.social{
+                li{
+                    margin-right: 8px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    a{
+                        width: 3.1rem; height: 3.1rem; font-size: 1.6rem; background-color: #fff; border-radius: 100%; line-height: 3.1rem; color: var(--active-font-color); display: block; text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .bottom{
+        height: 10rem; position: relative;
+        .logo{
+            img{
+                height: 5.7rem;
+            }
+        }
+        ul{
+            &.menu{
+                position: relative; z-index: 9999;
+                li{
+                    margin-right: 6rem; position: relative;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    a{
+                        color: #6c6c6c; font-weight: 600; transition: all .3s ease-in-out; font-size: 1.6rem;
+                    }
+                    &.current-menu-item{
+                        a{
+                            color: var(--active-font-color);
+                        }
+                    }
+                    &:hover{
+                        a{
+                            color: var(--active-font-color); 
+                        }
+                    }
+                    .sub-menu{
+                        position: absolute; top: 100%; left: 0; background-color: #fff; box-shadow: rgba(0,0,0,.2) 0 0 10px; width: 25rem; opacity: 0; visibility: hidden; transition: all .3s ease-in;
+                        li{
+                            display: block; width: 100%;
+                            a{
+                                padding: 1rem 2rem; display: block; border-bottom: rgba(0,0,0,.1) 1px solid; width: 100%;  color: #6c6c6c; 
+                                &:hover{
+                                    color: var(--active-font-color);
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                        .sub-menu{
+                            opacity: 1; visibility: visible;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1200px){
+    header{
+        .bottom {
+            ul{
+                &.menu {
+                    li {
+                        margin-right: 3rem;
+                        a{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1023px){
+    header{
+        .bottom{
+            padding-right: 7rem;
+            .mobile-menu{
+                display: none;
+            }
+            ul.menu{
+                
+                li{
+                    .sub-menu{
+                        width: 100%;
+                        position: relative;
+                        opacity: 1 !important; visibility: visible !important; transition: initial;
+                    }
+                }
+            }
+        }
+    }
+}

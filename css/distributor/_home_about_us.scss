@@ -1,0 +1,81 @@
+.about_back{
+    width: 100%; overflow: hidden;
+    &.second{
+        .avator{
+            right: -6%; left: auto; margin-bottom: 4rem;
+        }
+    }
+    &.corporate{
+        &.second{
+            .avator{
+                left: 0;
+            }
+            background-color: #fafafa;
+        }
+        .avator{
+            left: -10%;
+        }
+        .portion{
+            width: 100%; margin-bottom: 2.5rem;
+            h3{
+                color: #000; font-size: 2rem; font-weight: 700; margin-bottom: 1rem;
+            }
+            p{
+                font-size: 1.6rem; line-height: 3.2rem; margin-bottom: 0;
+            }
+        }
+    }
+    .avator{
+        position: relative; left: -37%;
+    }
+    .content_back{
+        width: 100%;
+        
+        p{
+            color: var(--primary-font-color); margin-bottom: 4rem; font-size: 1.6rem;
+            strong{
+                color: #000; font-size: 2.2rem;
+            }
+        }
+        .list{
+            margin-bottom: 3rem;
+        }
+        .custom_button{
+            margin-right: 1.4rem; margin-bottom: 2rem;
+            &:first-child{
+                a{
+                    background-color: var(--primary-color); color: var(--active-font-color); border-color: #92cce7;
+                    &:hover{
+                        background-color: #f7f7f7; 
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width:1499px){
+    .about_back{
+        &.corporate{
+            &.second{
+                .avator{
+                    right: 0; left: auto;
+                }
+            }
+            .avator{
+                right: 0; left: auto;
+            }
+            
+        }
+        &.second{
+            .avator{
+                right: 0; left: auto;
+            }
+        }
+        .avator{
+            left: 0; width: 100%;
+        }
+    }
+}

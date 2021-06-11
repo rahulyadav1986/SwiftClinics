@@ -1,0 +1,89 @@
+.benifits_back{
+    width: 100%; text-align: center; background-color: #fff9fb; padding-bottom: 1.8rem;
+    .custom_heading{
+        margin-bottom: 2rem;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    .main_back{
+        margin-top: 6rem;
+        .row{
+            .col{
+                flex: 0 0 25%; max-width: 25%;
+                &:nth-child(5){
+                    flex: 0 0 50%; max-width: 50%;
+                    .portion{
+                        p{
+                            width: 50%; display: inline-block;
+                        }
+                    }
+                }
+                &:nth-child(6){
+                    flex: 0 0 50%; max-width: 50%;
+                    .portion{
+                        p{
+                            width: 50%; display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .portion{
+            width: 100%; margin-bottom: 6rem;
+            img{
+                margin-bottom: 1.5rem; height: 15.7rem; margin-bottom: 3rem;
+            }
+            h3{
+                font-size: 2.3rem; font-weight: 700; line-height: 3rem; margin-bottom: 1rem;
+            }
+            p{
+                font-size: 1.6rem; padding: 0 14px;
+            }
+            .custom_button{
+                margin-top: 3rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1023px){
+    .benifits_back{
+        .main_back{
+            .row{
+                .col{
+                    max-width: 50%; flex: 0 0 50%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:500px){
+    .benifits_back{
+        .main_back{
+            .row{
+                .col{
+                    max-width: 100%; flex: 0 0 100%;
+                    &:nth-child(5){
+                        flex: 0 0 100%; max-width: 100%;
+                        .portion{
+                            p{
+                                width: 100%; display: inline-block;
+                            }
+                        }
+                    }
+                    &:nth-child(6){
+                        flex: 0 0 100%; max-width: 100%;
+                        .portion{
+                            p{
+                                width: 100%; display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

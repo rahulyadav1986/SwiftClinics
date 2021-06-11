@@ -1,0 +1,72 @@
+@media (min-width: 992px) and (max-width: 1200px) {
+	.custom-bnr-img img {height: 210px;}
+	.dp-loc-con ul li a {font-size: 14px;}
+	.dp-loc-con ul li span {left: 16px;}
+	.topic-bnr .custom-bnr-img img {height: 230px;}
+}
+@media (max-width: 991.98px) {
+	.custom-bnr-img img {height: 170px;}
+	.custom-inner-abt-img img {width: 60%;margin-bottom: 60px;}
+	.dp-custom-pad {padding: 40px 0;}
+	.custom-inner-abt-content ul li {font-size: 14px;}
+	.custom-inner-abt-content ul li span {top: -2px;}
+	.dp-loc-con ul li a {font-size: 17px;}
+	.custom-inner-abt-img {text-align: center;}
+	.topic-bnr .custom-bnr-img img {height: 150px;}
+	.topic-bnr .custom-bnr-img {transform: translateY(-33%);}
+	.service-dp-hd {font-size: 15px;line-height: 28px;}
+	.ser-book-img img {width: 60%;margin-bottom: 40px;}
+	.ser-book-img {text-align: center;}
+	.tes-ser-img {text-align: center;}
+	.tes-ser-img img{width: 60%;margin-bottom: 40px;}
+	.custom-dp-pricing .nav-item a {font-size: 18px;padding: 17px 10px;}
+	.custom-dp-pricing .nav-item a.active::after {
+border-top: 31px solid transparent;
+border-left: 50px solid #d2edf8;
+border-bottom: 31px solid transparent;
+right: -49px;}
+	.table.dp-table tr td {font-size: 14px;padding: 20px 8px;}
+
+}
+@media (max-width: 767.98px) {
+	.custom-bnr-img {right: 2%;}
+	.custom-bnr-img img {height: 120px;}
+	.custom-inner-abt-img img {width: 70%;}
+	.custom-inner-abt-content ul {column-count: 1;}
+	.custom-inner-abt-content ul li {margin-bottom: 26px;}
+	.custom-inner-abt-content ul li span {top: -5px;}
+	.abt-cus-map iframe {height: 200px;margin-bottom: 20px;}
+	.dp-loc-con {margin-bottom: 12px;}
+	.custom-location.dp-custom-pad {padding-top: 0;}
+	.dp-loc-con ul li a {font-size: 14px;}
+	.topic-bnr .custom-bnr-img img {
+    height: 90px;
+}
+.topic-bnr .custom-bnr-img {
+    transform: translateY(-10%);
+}
+	.service-dp-icon span {
+    margin-bottom: 4px;
+}
+	.dervice-cus-dp-wrap {
+    margin-bottom: 30px;
+}
+	.service-name-custom .custom_button {
+    margin-top: 0px;
+}
+	.tes-ser-con ul li {font-size: 14px;}
+	.custom-dp-pricing .nav-item a.active::after {
+		display: none;
+	}
+}
+@media (max-width: 360px) {
+	.custom-bnr-img img {height: 100px;}
+}
+
+
+
+
+
+
+
+
